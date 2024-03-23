@@ -3,11 +3,12 @@
 
 /* Styles for the cube editor */
 @import url("cube/layout.css");
-@import url("cube/display.css");
 @import url("cube/info.css");
+@import url("cube/display.css");
 @import url("cube/color.css");
 @import url("cube/timings.css");
 @import url("cube/timeline.css");
+@import url("cube/configurations.css");
 
 * {
     user-select: none;

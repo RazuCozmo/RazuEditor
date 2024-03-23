@@ -1,0 +1,85 @@
+#cube-configurations {
+    display: grid;
+
+    grid-template-rows: auto;
+    grid-template-columns: 120px 0px 96px 0px 120px 0px 80px;
+
+    grid-column-start: 1;
+    grid-column-end: 6;
+
+    gap: 16px;
+}
+
+#cube-configurations > .duration,
+#cube-configurations > .offset,
+#cube-configurations > .rotation-period,
+#cube-configurations > .overwritable {
+    display: grid;
+    
+    grid-template-rows: 16px auto;
+    grid-template-columns: 120px;
+    width: 120px;
+
+    gap: 8px;
+}
+
+#cube-configurations > .offset {
+    grid-template-rows: auto;
+    grid-template-columns: 96px;
+
+    width: 96px;
+}
+#cube-configurations > .offset > .cube-input {
+    align-self: center;
+    justify-self: center;
+    grid-template-rows: 16px 16px 16px;
+}
+#cube-configurations > .offset > .cube-input > #top {
+    grid-row: 1;
+    grid-column: 2;
+}
+#cube-configurations > .offset > .cube-input > #left {
+    grid-row: 2;
+    grid-column: 3;
+}
+#cube-configurations > .offset > .cube-input > #bottom {
+    grid-row: 3;
+    grid-column: 2;
+}
+#cube-configurations > .offset > .cube-input > #right {
+    grid-row: 2;
+    grid-column: 1;
+}
+#cube-configurations > .offset > .cube-input > .overlay {
+    grid-row: 2;
+    grid-column: 2;
+
+    opacity: 1;
+}
+#cube-configurations > .offset > .cube-input:hover > .overlay {
+    display: unset;
+}
+
+#cube-configurations > .overwritable {
+    width: 80px;
+    grid-template-columns: 80px;
+}
+#cube-configurations > .overwritable > #overwritable {
+    height: 16px;
+    width: 16px;
+    align-self: center;
+    justify-self: center;
+}
+#cube-configurations > .overwritable > #overwritable:hover {
+    cursor: pointer;
+}
+
+#cube-configurations > * > .title {
+    justify-self: center;
+    font-size: 12px;
+    text-align: center;
+}
+#cube-configurations > * > input[type="text"] {
+    height: 16px;
+    text-align: center;
+}
