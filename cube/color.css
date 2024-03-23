@@ -1,0 +1,56 @@
+#cube-color {
+    display: grid;
+
+    grid-template-rows: 16px 48px 48px;
+    gap: 8px;
+}
+
+#cube-color > .title {
+    justify-self: center;
+    font-size: 12px;
+}
+#cube-color > .selector-wrapper {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+
+    height: 46px;
+    width: 46px;
+    justify-self: center;
+    align-self: center;
+
+    border-color: lightgray;
+    border-width: 1px;
+    border-style: solid;
+}
+#cube-color > .selector-wrapper > .selector {
+    display: grid;
+
+    grid-template-columns: 24px 24px;
+    grid-template-rows: 24px 24px;
+
+    height: 48px;
+    width: 48px;
+    justify-self: center;
+    align-self: center;
+    background: lightgray;
+
+    rotate: 45deg;
+    transform: scale(2) translateY(-0.5px) translateX(-1px);
+
+    gap: 1px;
+}
+#cube-color > .selector-wrapper > .selector > input {
+    height: 24px;
+    width: 24px;
+    padding: 0px;
+
+    border: none;
+}
+/* #cube-color > .selector-wrapper > .selector > input::-webkit-color-swatch {
+    display: none;
+} */
+#cube-color > .selector-wrapper > .selector > input:hover {
+    cursor: unset;
+}

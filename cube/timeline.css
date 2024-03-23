@@ -1,0 +1,28 @@
+#cube-timeline {
+    display: grid;
+
+    grid-template-rows: auto;
+    grid-template-columns: 64px auto 64px;
+
+    gap: 8px;
+}
+
+#cube-timeline > #timeline {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 1;
+}
+#cube-timeline > #min {
+    grid-column: 1;
+    grid-row: 1;
+    z-index: -10;
+    font-size: 12px;
+}
+#cube-timeline > #max {
+    grid-column: 3;
+    grid-row: 1;
+    z-index: -10;
+    font-size: 12px;
+
+    text-align: right;
+}

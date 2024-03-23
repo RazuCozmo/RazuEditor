@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ui.css"></link>
+</head>
+<body>
+    <div id="cube-editor">
+        <div id="cube-info-bar">
+            <button id="back"></button>
+            <button id="import"></button>
+            <button id="export"></button>
+            <button id="play"></button>
+            <input id="name" placeholder="Name your animation in camelCase here..." name="textfield" value="" autocomplete="off"></input>
+            <button id="docs"></button>
+        </div>
+        <span id="cube-display">
+            <span id="base"></span>
+
+            <span id="top"></span>
+            <span id="right"></span>
+            <span id="bottom"></span>
+            <span id="left"></span>
+
+            <span id="direction-text">0</span>
+            <span id="direction"></span>
+        </span>
+        <horizontal-divider class="cube-1"></horizontal-divider>
+        <div id="cube-color">
+            <span class="title">Colors</span>
+            <span class="selector-wrapper">
+                <span class="selector" id="on">
+                    <input type="color" id="top" value="#ffffff">
+                    <input type="color" id="right" value="#ffffff">
+                    <input type="color" id="left" value="#ffffff">
+                    <input type="color" id="bottom" value="#ffffff">
+                </span>
+            </span>
+            <span class="selector-wrapper">
+                <span class="selector" id="off">
+                    <input type="color" id="top" value="#ffffff">
+                    <input type="color" id="right" value="#ffffff">
+                    <input type="color" id="left" value="#ffffff">
+                    <input type="color" id="bottom" value="#ffffff">
+                </span>
+            </span>
+        </div>
+        <horizontal-divider class="cube-2"></horizontal-divider>
+        <div id="cube-timings">
+            <span class="title-wrapper" id="on-off">
+                <span class="title">On/Off Periods (ms)</span>
+                <span class="line"></span>
+            </span>
+            <span class="cube-input">
+                <input id="top" name="textfield" value="" autocomplete="off"></input>
+                <input id="left" name="textfield" value="" autocomplete="off"></input>
+                <input id="bottom" name="textfield" value="" autocomplete="off"></input>
+                <input id="right" name="textfield" value="" autocomplete="off"></input>
+                <span class="overlay">On</span>
+            </span>
+            <span class="cube-input">
+                <input id="top" name="textfield" value="" autocomplete="off"></input>
+                <input id="left" name="textfield" value="" autocomplete="off"></input>
+                <input id="bottom" name="textfield" value="" autocomplete="off"></input>
+                <input id="right" name="textfield" value="" autocomplete="off"></input>
+                <span class="overlay">Off</span>
+            </span>
+            <span class="title-wrapper" id="transitions">
+                <span class="title">Transition Periods (ms)</span>
+                <span class="line"></span>
+            </span>
+            <span class="cube-input">
+                <input id="top" name="textfield" value="" autocomplete="off"></input>
+                <input id="left" name="textfield" value="" autocomplete="off"></input>
+                <input id="bottom" name="textfield" value="" autocomplete="off"></input>
+                <input id="right" name="textfield" value="" autocomplete="off"></input>
+                <span class="overlay">On</span>
+            </span>
+            <span class="cube-input">
+                <input id="top" name="textfield" value="" autocomplete="off"></input>
+                <input id="left" name="textfield" value="" autocomplete="off"></input>
+                <input id="bottom" name="textfield" value="" autocomplete="off"></input>
+                <input id="right" name="textfield" value="" autocomplete="off"></input>
+                <span class="overlay">Off</span>
+            </span>
+        </div>
+        <div id="cube-timeline">
+            <span id="min">0:00s</span>
+            <input id="timeline" type="range">
+            <span id="max">1:00s</span>
+        </div>
+    </div>
+</body>
+</html>

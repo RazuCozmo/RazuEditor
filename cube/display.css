@@ -1,0 +1,101 @@
+span#cube-display {
+    justify-self: center;
+    align-self: center;
+
+    width: 128px;
+    height: 128px;
+}
+
+span#cube-display > img {
+    position: absolute;
+}
+span#cube-display > span {
+    height: 128px;
+    width: 128px;
+
+    position: absolute;
+    display: block;
+
+    background-image: url("lights.png");
+    background-size: 512px;
+    background-repeat: no-repeat;
+}
+span#cube-display > span#base {
+    background-image: url("base.png");
+    background-size: 128px;
+    z-index: -5;
+}
+
+span#cube-display > span#direction {
+    background-image: url("direction.png");
+    background-size: 128px;
+}
+span#cube-display > span#direction-text {
+    background-image: none;
+
+    width: 128px;
+    transform: translateY(calc(64px - 50%));
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+
+    height: unset;
+    background-color: unset;
+}
+span#cube-display > span#direction-text::after {
+    content: "°";
+    position: absolute;
+}
+
+
+span#cube-display > span#top {
+    background-position-x: 0px;
+}
+span#cube-display > span#right {
+    background-position-x: -128px;
+}
+span#cube-display > span#bottom {
+    background-position-x: -256px;
+}
+span#cube-display > span#left {
+    background-position-x: -384px;
+}
+
+
+span#cube-display > span#top::after,
+span#cube-display > span#right::after,
+span#cube-display > span#bottom::after,
+span#cube-display > span#left::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 64px;
+    width: 64px;
+    background-color: gray;
+    z-index: -1;
+}
+
+span#cube-display > span#top::after {
+    height: 22px;
+    width: 38px;
+    transition-duration: attr(transition-duration);
+    transform: translateX(45px) translateY(9px);
+}
+span#cube-display > span#right::after {
+    height: 38px;
+    width: 22px;
+    transition-duration: attr(transition-duration);
+    transform: translateX(97px) translateY(45px);
+}
+span#cube-display > span#bottom::after {
+    height: 22px;
+    width: 38px;
+    transition-duration: attr(transition-duration);
+    transform: translateX(45px) translateY(97px);
+}
+span#cube-display > span#left::after {
+    height: 38px;
+    width: 22px;
+    transition-duration: attr(transition-duration);
+    transform: translateX(9px) translateY(45px);
+}

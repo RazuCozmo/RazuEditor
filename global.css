@@ -1,0 +1,50 @@
+horizontal-divider {
+    box-shadow: 1px 0px 0px b;
+    background-color: lightgray;
+    margin-left: -1px;
+}
+vertical-divider {
+    box-shadow: 0px 1px 0px b;
+    background-color: lightgray;
+    margin-top: -1px;
+}
+
+button {
+    border-width: 1px;
+    border-radius: 0px;
+    border-color: lightgray;
+    border-style: solid;
+    background-color: white;
+}
+button:hover {
+    cursor: pointer;
+}
+button:active {
+    border-color: gray;
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+input {
+    border-width: 1px;
+    border-radius: 0px;
+    border-color: lightgray;
+    border-style: solid;
+    background-color: white;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+input:focus {
+    outline: none;
+    border-color: gray;
+}
+input:hover {
+    cursor: text;
+}
+
+input[type="range"] {
+    padding: 0px;
+}
+input[type="range"]:hover {
+    cursor: unset;
+}

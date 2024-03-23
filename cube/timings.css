@@ -1,0 +1,90 @@
+#cube-timings {
+    display: grid;
+
+    grid-template-rows: 12px auto 12px auto;
+    grid-template-columns: auto auto;
+
+    gap: 8px;
+}
+
+#cube-timings > .title-wrapper {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-template-columns: auto 1fr;
+    height: 16px;
+    gap: 8px;
+}
+#cube-timings > .title-wrapper > .title {
+    height: 16px;
+    font-size: 12px;
+    grid-column: 1;
+    max-width: fit-content;
+}
+#cube-timings > .title-wrapper > .line {
+    background-color: lightgray;
+    height: 1px;
+    grid-column: 2;
+    transform: translateY(7px);
+}
+
+#cube-timings > .title#on-off {
+    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+#cube-timings > .title#transitions {
+    grid-row: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.cube-input {
+    display: grid;
+
+    grid-template-rows: 8px 8px 8px 8px;
+    grid-template-columns: 32px 32px 32px;
+
+    align-self: center;
+    justify-self: center;
+}
+.cube-input > * {
+    padding: 2px;
+    text-align: center;
+    font-size: 12px;
+}
+.cube-input > #top {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column: 2;
+}
+.cube-input > #left {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column: 3;
+}
+.cube-input > #bottom {
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column: 2;
+}
+.cube-input > #right {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column: 1;
+}
+.cube-input > .overlay {
+    padding: 0px;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+    justify-self: center;
+    align-self: center;
+
+    opacity: 0.5;
+}
+.cube-input:hover > .overlay {
+    display: none;
+}

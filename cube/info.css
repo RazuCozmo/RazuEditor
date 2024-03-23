@@ -1,0 +1,11 @@
+
+#cube-info-bar {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row: 1;
+
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(4, 32px) auto 32px;
+    grid-template-rows: auto;
+}

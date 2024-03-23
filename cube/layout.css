@@ -1,0 +1,40 @@
+div#cube-editor {
+    height: 304px;
+    width: 512px;
+
+    display: grid;
+    grid-template-columns: 128px 0px 48px 0px auto;
+    grid-template-rows: 32px 128px 32px 64px;
+    gap: 16px;
+    
+    border-width: 2px;
+    border-color: red;
+    border-style: solid;
+    padding: 16px;
+}
+
+span#cube-display {
+    grid-column: 1;
+    grid-row: 2;
+}
+horizontal-divider.cube-1 {
+    grid-column: 2;
+    grid-row: 2;
+}
+div#cube-color {
+    grid-column: 3;
+    grid-row: 2;
+}
+horizontal-divider.cube-2 {
+    grid-column: 4;
+    grid-row: 2;
+}
+div#cube-timings {
+    grid-column: 5;
+    grid-row: 2;
+}
+div#cube-timeline {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row: 3;
+}
